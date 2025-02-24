@@ -7,7 +7,8 @@
 
 A feature-rich todo list application built with React Native and Expo. Manage tasks with reminders, categories, and priorities. Never miss a deadline! 📅
 
-<img width="448" alt="Screenshot 2025-02-22 at 6 34 43 PM" src="https://github.com/user-attachments/assets/9c71fd77-3fea-4cdb-b0d5-0b3c52ff49f8"/>
+<img width="410" alt="Screenshot 2025-02-24 at 2 15 13 PM" src="https://github.com/user-attachments/assets/97be9e6d-74e8-47e0-a114-40b4ed694c6c" />
+
 
 
 ## Installation 🛠️
