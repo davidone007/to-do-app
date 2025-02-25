@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, View, TouchableWithoutFeedback, StyleSheet } from 'react-native';
+import { Modal, View, TouchableWithoutFeedback, StyleSheet, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import TaskForm from './TaskForm';
 import { addTask } from '../redux/slices/taskSlice';
@@ -24,13 +24,18 @@ const AddTaskModal = ({ visible, onClose }) => {
         <View style={styles.overlay} />
       </TouchableWithoutFeedback>
       
-      <View style={styles.modalContent}>
-        <TaskForm 
-          categories={categories}
-          onSave={handleSubmit}
-          onCancel={onClose}
-        />
-      </View>
+      <KeyboardAvoidingView
+        style={styles.modalContent}
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      >
+        <ScrollView contentContainerStyle={styles.scrollViewContent}>
+          <TaskForm 
+            categories={categories}
+            onSave={handleSubmit}
+            onCancel={onClose}
+          />
+        </ScrollView>
+      </KeyboardAvoidingView>
     </Modal>
   );
 };
@@ -47,6 +52,10 @@ const styles = StyleSheet.create({
     padding: 20,
     marginTop: 'auto',
     maxHeight: '90%',
+  },
+  scrollViewContent: {
+    flexGrow: 1,
+    justifyContent: 'center',
   },
 });
 
