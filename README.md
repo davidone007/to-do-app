@@ -28,5 +28,6 @@ MIT License - See [LICENSE](https://github.com/davidone007/to-do-app/blob/main/L
 
 ---
 
-**Made with ❤️ by [davidone007](https://github.com/davidone007) - [andrescabezas26](https://github.com/andrescabezas26)**  
+**Made with ❤️ by [davidone007](https://github.com/davidone007) - [andrescabezas26](https://github.com/andrescabezas26)-
+[Nicolas-CM](https://github.com/Nicolas-CM)**  
 **Project Repository**: [to-do-app](https://github.com/davidone007/to-do-app)
